@@ -1,0 +1,205 @@
+/* ===== リセット & 基本 ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== ヘッダー ===== */
+.site-header {
+  background: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.site-header nav {
+  margin-top: 10px;
+}
+
+.site-header nav a {
+  margin: 0 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===== ヒーロー ===== */
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero p {
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+}
+
+/* ===== コンテンツ共通 ===== */
+.container {
+  max-width: 760px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* ===== 本棚 ===== */
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  display: flex;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-item img {
+  width: 90px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.book-info strong {
+  font-size: 1.1rem;
+}
+
+.book-info span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 4px 0 10px;
+}
+
+.buy-links a {
+  font-size: 0.9rem;
+  color: #0066cc;
+  margin-right: 10px;
+}
+
+/* ===== フッター ===== */
+.site-footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.8rem;
+  color: #888;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .site-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .container {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  .book-item {
+    align-items: center;
+  }
+
+  .book-item img {
+    width: 65px;
+  }
+}
+
+/* ===== About ===== */
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-icon {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.about-text h2 {
+  margin-top: 0;
+}
+
+.about-note {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* ===== スマホ対応（About） ===== */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.post-link {
+  display: flex;
+  gap: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-img {
+  width: 160px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .post-link {
+    flex-direction: column;
+  }
+
+  .post-img {
+    width: 100%;
+  }
+}
